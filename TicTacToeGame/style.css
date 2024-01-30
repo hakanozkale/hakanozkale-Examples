@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222831;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 600px;
+    height: 600px;
+
+    border-radius: 32px;
+    background-color: #7C93C3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E8C872;
+    padding: 8px 0px;
+}
+#next{
+    width: 50px;
+    height: 50px;
+    
+}
+#nextText{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.title{
+    width: 50%;
+    text-align: center;
+    margin: 0px;
+    margin-right: 22px;
+    color:#222831;
+    border-right: 1px solid #E8C872;
+}
+
+.buttonsContainer{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-radius: 8px;
+    background-color: #000;
+    gap: 4px;
+}
+
+.row{
+    width: 100%;
+    height: calc(33.11% - 2px);
+    
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.button{
+    flex: 1;
+    border:none;
+    background-color: #eee;
+    font-size: 64px;
+    color: #000;
+
+    &:hover {
+        background-color: #FFF3CF;
+    }
+    &:active {
+        background-color: #ffeeaa;
+    }
+}
+
+.footer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footerBox{
+    background-color: #EFECEC;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#restart{
+    border:none;
+    background-color: #eee;
+
+    width: 60px;
+    border-radius: 8px;
+    font-size: 36px;
+    padding: 12px 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: #FFF3CF;
+    }
+    &:active {
+        background-color: #ffeeaa;
+        scale: 0.9;
+    }
+}
+
+
+/* --------- UTILS ------- */
+.buttonaBasildi{
+    &:hover {
+        background-color: #eee; 
+    }
+    &:active {
+        background-color: #eee; 
+    }
+}
+
+.kazananDugmeler{
+    background-color: #aaffaa; 
+    &:hover {
+        background-color: #aaffaa; 
+    }
+}
+
+.kazananlarExcept{
+    &:hover {
+        background-color: #eee; 
+    }
+    &:active {
+        background-color: #eee; 
+    }
+}
+
+.oynayanOyuncu{
+    background-color: #aaffaa;
+}
+
+
+
